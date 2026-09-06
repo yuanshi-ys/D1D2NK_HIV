@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "D1D2NK_HIV: HIV integration-site analysis pipeline"
+type: software
+version: 1.0.0
+date-released: "2026-09-06"
+doi: 10.5281/zenodo.22476665
+license: MIT
+repository-code: "https://github.com/yuanshi-ys/D1D2NK_HIV"
+url: "https://github.com/yuanshi-ys/D1D2NK_HIV"
+authors:
+  - family-names: Shi
+    given-names: Yuan
+    affiliation: "Department of Molecular and Medical Pharmacology, University of California, Los Angeles, CA, USA"
+  - family-names: Abbaali
+    given-names: Izra
+    affiliation: "Department of Medicine, Division of Infectious Diseases, University of California, Los Angeles, CA, USA"
+  - family-names: Harvey
+    given-names: William
+    affiliation: "Department of Medicine, Division of Infectious Diseases, University of California, Los Angeles, CA, USA"
+  - family-names: Kostelny
+    given-names: Matthew
+    affiliation: "Department of Microbiology, Immunology, and Molecular Genetics, University of California, Los Angeles, CA, USA"
+  - family-names: Chen
+    given-names: Hongying
+    affiliation: "Department of Microbiology, Immunology, and Molecular Genetics, University of California, Los Angeles, CA, USA"
+  - family-names: Gonzalez
+    given-names: Alexander
+    affiliation: "Department of Medicine, Division of Infectious Diseases, University of California, Los Angeles, CA, USA"
+  - family-names: Dimapasoc
+    given-names: Melanie
+    affiliation: "Department of Microbiology, Immunology, and Molecular Genetics, University of California, Los Angeles, CA, USA"
+  - family-names: Seet
+    given-names: Christopher
+    affiliation: "Department of Medicine, Division of Hematology and Oncology, University of California, Los Angeles, CA, USA"
+  - family-names: Blish
+    given-names: "Catherine A."
+    affiliation: "Department of Medicine, Division of Infectious Diseases and Geographic Medicine, Stanford University, Stanford, CA, USA"
+  - family-names: Zack
+    given-names: "Jerome A."
+    affiliation: "Department of Microbiology, Immunology, and Molecular Genetics; Division of Hematology and Oncology, University of California, Los Angeles, CA, USA"
+  - family-names: Kim
+    given-names: "Jocelyn T."
+    affiliation: "Department of Medicine, Division of Infectious Diseases, University of California, Los Angeles, CA, USA"

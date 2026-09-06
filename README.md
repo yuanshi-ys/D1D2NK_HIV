@@ -1,4 +1,6 @@
 # D1D2NK_HIV
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22476665.svg)](https://doi.org/10.5281/zenodo.22476665)
+
 Code to analyze DNA barcode and integration sites for the manuscript "NK Cells Engineered with a Chimeric Antigen Receptor Delay HIV Rebound and Reshape HIV Reservoir Composition".
 
 Two stages:
