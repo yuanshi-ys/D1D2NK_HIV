@@ -1,4 +1,4 @@
-#!/usr/bin/env python bowtie_wrapper_GSE335409.py
+#!/usr/bin/env python bowtie_wrapper_D1D2_BIseq.py
 '''changed based on Tianhao's bowtie_wrapper_R5.py'''
 import os
 import glob
@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 def main():
-  workpath = '/u/scratch/y/yuanshi/GSE335409/'
+  workpath = '/u/scratch/y/yuanshi/D1D2_BIseq/'
   homepath = '/u/home/y/yuanshi/JCK/script'
   #prepare path
   subfolders = ['ISS_bowtie','ISS_bowtie/hg38','ISS_bowtie/HIV']

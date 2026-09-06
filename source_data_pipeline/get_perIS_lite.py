@@ -82,20 +82,20 @@ def add_proliferation(per_is):
 def add_rna_columns(per_is, rna_csv_path=RNA_CSV_PATH, gse_mouse_col="AnimalKey"):
     rna = pd.read_csv(rna_csv_path)
 
-    rna["freq_organ"] = rna.groupby(["MouseID_GSE335409", "Organ"])["UMI"].transform(lambda s: s / s.sum())
-    organ_lookup = rna.set_index(["MouseID_GSE335409", "Organ", "RNA_barcode"])["freq_organ"].to_dict()
+    rna["freq_organ"] = rna.groupby(["MouseID_D1D2_BIseq", "Organ"])["UMI"].transform(lambda s: s / s.sum())
+    organ_lookup = rna.set_index(["MouseID_D1D2_BIseq", "Organ", "RNA_barcode"])["freq_organ"].to_dict()
 
     non_tb = rna[rna["Organ"] != "TB"].copy()
-    non_tb["freq_organ"] = non_tb.groupby(["MouseID_GSE335409", "Organ"])["UMI"].transform(lambda s: s / s.sum())
+    non_tb["freq_organ"] = non_tb.groupby(["MouseID_D1D2_BIseq", "Organ"])["UMI"].transform(lambda s: s / s.sum())
     animal_lookup = {}
-    for mouse, g in non_tb.groupby("MouseID_GSE335409"):
+    for mouse, g in non_tb.groupby("MouseID_D1D2_BIseq"):
         pivot = g.pivot_table(index="RNA_barcode", columns="Organ", values="freq_organ", fill_value=0)
         animal_lookup[mouse] = pivot.mean(axis=1).to_dict()
 
     tb = rna[rna["Organ"] == "TB"].copy()
-    tb["freq_tb"] = tb.groupby("MouseID_GSE335409")["UMI"].transform(lambda s: s / s.sum())
+    tb["freq_tb"] = tb.groupby("MouseID_D1D2_BIseq")["UMI"].transform(lambda s: s / s.sum())
     tb_lookup = {}
-    for mouse, g in tb.groupby("MouseID_GSE335409"):
+    for mouse, g in tb.groupby("MouseID_D1D2_BIseq"):
         tb_lookup[mouse] = g.set_index("RNA_barcode")["freq_tb"].to_dict()
 
     per_is = per_is.copy()

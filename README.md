@@ -3,7 +3,7 @@ Code to analyze DNA barcode and integration sites for the manuscript "NK Cells E
 
 Two stages:
 
-- `cluster_pipeline/` -- runs on Hoffman2 (SGE). Raw paired-end FASTQ (GSE335409) -> barcode/UMI/integration-site extraction -> bowtie2 alignment to hg38 + HIV -> `linkage_UDP*.txt` per sample. See `cluster_pipeline/README.md`.
+- `cluster_pipeline/` -- runs on Hoffman2 (SGE). Raw paired-end FASTQ (D1D2_BIseq) -> barcode/UMI/integration-site extraction -> bowtie2 alignment to hg38 + HIV -> `linkage_UDP*.txt` per sample. See `cluster_pipeline/README.md`.
 - `source_data_pipeline/` -- runs locally. `get_perIS_lite.py` turns the linkage files into a per-integration-site table; `map_to_database.py` annotates it against gene/regulatory/histone-mark databases (bedtools); `generate_source_data.py` produces the Source Data Excel files for Fig. 5, 6, S7, S8.
 
 The reference/annotation data these scripts read (`ref.index`, `RNA.csv`, gene/regulatory `.gff3`/`.bed` databases) is not included in this repository.
